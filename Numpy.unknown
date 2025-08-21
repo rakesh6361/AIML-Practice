@@ -1,0 +1,519 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "094fbbec-984d-4401-b700-3b235dd27df4",
+   "metadata": {},
+   "source": [
+    "## Creating numpy arraay"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "4a333623-319f-4442-913d-4f9666f9caf3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1 2 3 4 5]\n",
+      "<class 'numpy.ndarray'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([1, 2, 3, 4, 5])\n",
+    "\n",
+    "print(arr)\n",
+    "\n",
+    "print(type(arr))\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "14475b8a-3ab8-4576-98d6-e55f82ba0f73",
+   "metadata": {},
+   "source": [
+    "## Create a 0-D array with value 42"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "398da514-8cb6-4d45-a52c-23b277280102",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "42\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array(42)\n",
+    "\n",
+    "print(arr)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d5cc102c-32ea-495d-a342-f146da4b7788",
+   "metadata": {},
+   "source": [
+    "## Create a 1-D array containing the values 1,2,3,4,5:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "c3219f88-f416-465b-931c-119f1a5e36ed",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1 2 3 4 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([1, 2, 3, 4, 5])\n",
+    "\n",
+    "print(arr)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "c7f0e867-67b9-4b1f-ae60-22d8ab657ee6",
+   "metadata": {},
+   "source": [
+    "## Create a 2-D array containing two arrays with the values 1,2,3 and 4,5,6:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "5fbf600f-b091-4b73-bd48-3fe028241fda",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[1 2 3]\n",
+      " [4 5 6]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([[1, 2, 3], [4, 5, 6]])\n",
+    "\n",
+    "print(arr)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "09037a32-6f05-4ba6-a15f-2338d7884bc0",
+   "metadata": {},
+   "source": [
+    "## Create a 3-D array with two 2-D arrays, both containing two arrays with the values 1,2,3 and 4,5,6:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "09ff3ca9-8894-41ce-8ce2-8589a05938c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[[1 2 3]\n",
+      "  [4 5 6]]\n",
+      "\n",
+      " [[1 2 3]\n",
+      "  [4 5 6]]]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])\n",
+    "\n",
+    "print(arr)\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "24e191ad-d394-406f-9c9d-067f9774eb69",
+   "metadata": {},
+   "source": [
+    "## Check how many dimensions the arrays have:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "d983b8cc-e82f-438d-ab94-dfcc5fa1c9ce",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "a = np.array(42)\n",
+    "b = np.array([1, 2, 3, 4, 5])\n",
+    "c = np.array([[1, 2, 3], [4, 5, 6]])\n",
+    "d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])\n",
+    "\n",
+    "print(a.ndim)\n",
+    "print(b.ndim)\n",
+    "print(c.ndim)\n",
+    "print(d.ndim)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "de100fd2-7699-48eb-a97a-2175c3e928f5",
+   "metadata": {},
+   "source": [
+    "## Create an array with 5 dimensions and verify that it has 5 dimensions:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "e22527e0-2124-41ac-8d5a-262e3164a7d0",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[[[[[1 2 3 4]]]]]\n",
+      "number of dimensions : 5\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([1, 2, 3, 4], ndmin=5)\n",
+    "\n",
+    "print(arr)\n",
+    "print('number of dimensions :', arr.ndim)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4554417c-dee3-4ef8-81b4-77c27742948d",
+   "metadata": {},
+   "source": [
+    "## ////Numpy array indexing/////"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e9d5c0aa-347c-4359-a015-87c3f9a82922",
+   "metadata": {},
+   "source": [
+    "## Get the first element from the following array:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "d749834e-6a5a-4038-8e99-a2866599f06f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([1, 2, 3, 4])\n",
+    "\n",
+    "print(arr[0])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0c1ffb3f-08dc-44bf-b3f8-b7327edcf3af",
+   "metadata": {},
+   "source": [
+    "## Get third and fourth elements from the following array and add them."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "4872337e-4747-46c8-8070-ba9ed7c9daf1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([1, 2, 3, 4])\n",
+    "\n",
+    "print(arr[2] + arr[3])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "94649fa7-11d8-4491-91ff-1408e9ca3222",
+   "metadata": {},
+   "source": [
+    "## Access 2-D Arrays\n",
+    "## To access elements from 2-D arrays we can use comma separated integers representing the dimension and the index of the element.\n",
+    "\n",
+    "## Think of 2-D arrays like a table with rows and columns, where the dimension represents the row and the index represents the column.\n",
+    "Access the element on the first row, second column:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "29ee84ed-fa93-4e46-ba29-1e64e6bc4e07",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2nd element on 1st row:  2\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])\n",
+    "\n",
+    "print('2nd element on 1st row: ', arr[0, 1])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "58daeb2c-3dfd-4d03-bf26-cce40aef9b31",
+   "metadata": {},
+   "source": [
+    "# Access the element on the 2nd row, 5th column:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "8d1652f6-2c17-43b2-ada6-dd2428e6e8f1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5th element on 2nd row:  10\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])\n",
+    "\n",
+    "print('5th element on 2nd row: ', arr[1, 4])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "09613a23-5963-47f3-9cef-1af5bd89b377",
+   "metadata": {},
+   "source": [
+    "## Access 3-D Arrays\n",
+    "To access elements from 3-D arrays we can use comma separated integers representing the dimensions and the index of the element.\n",
+    "\n",
+    "Example\n",
+    "Access the third element of the second array of the first array:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "8e76747a-4584-486e-b41b-fd4cbeea9f8b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([[[1, 2, 3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])\n",
+    "\n",
+    "print(arr[0, 1, 2])\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f0025c15-5108-4d80-b549-48cfa022b530",
+   "metadata": {},
+   "source": [
+    "## NumPy Array Slicing\n",
+    "Slice elements from index 1 to index 5 from the following array:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "61d650fb-6874-4cc5-9dd7-a1fc8e753182",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[2 3 4 5]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([1, 2, 3, 4, 5, 6, 7])\n",
+    "\n",
+    "print(arr[1:5])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "efb6fa12-785c-41e9-964b-1d03203ab582",
+   "metadata": {},
+   "source": [
+    "## Slice elements from index 4 to the end of the array:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "e886abef-4a06-4524-9fa3-ca8c907c23e9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[5 6 7]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([1, 2, 3, 4, 5, 6, 7])\n",
+    "\n",
+    "print(arr[4:])"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "03b94c99-6f48-468b-b853-420f1c81b218",
+   "metadata": {},
+   "source": [
+    "## Slice from the index 3 from the end to index 1 from the end:"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "60276041-6209-4ad6-aaed-fd36aa647e1b",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[5 6]\n"
+     ]
+    }
+   ],
+   "source": [
+    "import numpy as np\n",
+    "\n",
+    "arr = np.array([1, 2, 3, 4, 5, 6, 7])\n",
+    "\n",
+    "print(arr[-3:-1])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f1f697fd-d856-444b-9761-bf84c40e86bf",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
